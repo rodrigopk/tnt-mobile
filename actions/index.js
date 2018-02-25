@@ -3,7 +3,7 @@ export const DATA_AVAILABLE = 'DATA_AVAILABLE';
 //Import the sample data
 import Data from '../instructions.json';
 
-export function getData(){
+export const fetchHelloMessage = () => {
     return (dispatch) => {
 
         setTimeout(() => {
@@ -12,4 +12,6 @@ export function getData(){
         }, 2000);
 
     };
-}
+};
+
+export default { fetchHelloMessage };
