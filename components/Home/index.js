@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {
-  StyleSheet,
   View,
   Text,
   ActivityIndicator,
@@ -8,7 +7,7 @@ import {
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-import { fetchHelloMessage } from '../actions';
+import { fetchHelloMessage } from './actions';
 import styles from './styles';
 
 class Home extends Component {
@@ -39,17 +38,13 @@ class Home extends Component {
   }
 };
 
-function mapStateToProps(state, props) {
-  return {
-    loading: state.dataReducer.loading,
-    data: state.dataReducer.data,
-  }
-}
+const mapStateToProps = state => ({
+  loading: state.home.loading,
+  message: state.home.message,
+});
 
-function mapDispatchToProps(dispatch) {
-  return {
-    getMessage: dispatch(fetchHelloMessage()),
-  };
-}
+const mapDispatchToProps = dispatch => ({
+  getMessage: () =>  dispatch(fetchHelloMessage()),
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);

@@ -1,7 +1,7 @@
-export const DATA_AVAILABLE = 'DATA_AVAILABLE';
+export const DATA_AVAILABLE = 'MESSAGE_RECEIVED';
 
 //Import the sample data
-import Data from '../instructions.json';
+import Data from '../../hello.json';
 
 export const fetchHelloMessage = () => {
     return (dispatch) => {
