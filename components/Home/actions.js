@@ -1,16 +1,16 @@
-export const MESSAGE_RECEIVED = 'MESSAGE_RECEIVED';
+const API_BASE_URL = 'http://localhost:2300/';
+const HELLO_ENDPOINT = 'api/hello';
 
-//Import the sample data
-import Data from '../../hello.json';
+export const MESSAGE_RECEIVED = 'MESSAGE_RECEIVED';
 
 export const fetchHelloMessage = () => {
     return (dispatch) => {
-
-        setTimeout(() => {
-            var message  = Data.message;
-            dispatch({type: MESSAGE_RECEIVED, message: message});
-        }, 2000);
-
+      fetch(API_BASE_URL + HELLO_ENDPOINT)
+      .then(response => response.json())
+      .then(parsedResponse => {
+        var message  = parsedResponse.message;
+        dispatch({type: MESSAGE_RECEIVED, message: message});
+      });
     };
 };
 
