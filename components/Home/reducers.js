@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 
-import { DATA_AVAILABLE } from "./actions"
+import { MESSAGE_RECEIVED } from "./actions"
 
 let initialState = {
   message: '',
@@ -9,7 +9,7 @@ let initialState = {
 
 const homeReducer = (state = initialState, action) => {
     switch (action.type) {
-        case DATA_AVAILABLE:
+        case MESSAGE_RECEIVED:
             state = Object.assign({}, state, { message: action.message, loading:false });
             return state;
         default:

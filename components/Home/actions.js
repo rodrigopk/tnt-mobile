@@ -1,4 +1,4 @@
-export const DATA_AVAILABLE = 'MESSAGE_RECEIVED';
+export const MESSAGE_RECEIVED = 'MESSAGE_RECEIVED';
 
 //Import the sample data
 import Data from '../../hello.json';
@@ -8,7 +8,7 @@ export const fetchHelloMessage = () => {
 
         setTimeout(() => {
             var message  = Data.message;
-            dispatch({type: DATA_AVAILABLE, message: message});
+            dispatch({type: MESSAGE_RECEIVED, message: message});
         }, 2000);
 
     };

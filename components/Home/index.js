@@ -4,7 +4,6 @@ import {
   Text,
   ActivityIndicator,
 } from 'react-native';
-import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
 import { fetchHelloMessage } from './actions';
