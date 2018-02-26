@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:2300/';
+const API_BASE_URL = 'https://totally-not-twiter.herokuapp.com/';
 const HELLO_ENDPOINT = 'api/hello';
 
 export const MESSAGE_RECEIVED = 'MESSAGE_RECEIVED';
