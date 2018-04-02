@@ -6,6 +6,7 @@ import {
 } from 'react-native';
 import { connect } from 'react-redux';
 
+import MessageContainer from './MessageContainer';
 import { fetchHelloMessage } from './actions';
 import styles from './styles';
 
@@ -32,17 +33,16 @@ class Home extends Component {
     </View>
   );
 
-  renderMessage = () => (
-    <View style={styles.messageContainer}>
-      <Text style={styles.message}>
-        { this.props.message }
-      </Text>
-    </View>
-  );
+  renderMessage = () => {
+    return (
+      <MessageContainer title={this.props.title} message={this.props.message} />
+    );
+  }
 };
 
 const mapStateToProps = state => ({
   loading: state.home.loading,
+  title: state.home.title,
   message: state.home.message,
 });
 
