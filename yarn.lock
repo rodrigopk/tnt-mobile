@@ -1051,10 +1051,6 @@ ci-info@^1.0.0:
   version "1.1.2"
   resolved "https://registry.npmjs.org/ci-info/-/ci-info-1.1.2.tgz#03561259db48d0474c8bdc90f5b47b068b6bbfb4"
 
-circular-json-es6@^2.0.1:
-  version "2.0.2"
-  resolved "https://registry.npmjs.org/circular-json-es6/-/circular-json-es6-2.0.2.tgz#e4f4a093e49fb4b6aba1157365746112a78bd344"
-
 cli-cursor@^2.1.0:
   version "2.1.0"
   resolved "https://registry.npmjs.org/cli-cursor/-/cli-cursor-2.1.0.tgz#b35dac376479facc3e94747d41d0d0f5238ffcb5"
@@ -1370,12 +1366,6 @@ decamelize@^1.0.0, decamelize@^1.1.1:
   version "1.2.0"
   resolved "https://registry.npmjs.org/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
 
-deep-equal-ident@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.npmjs.org/deep-equal-ident/-/deep-equal-ident-1.1.1.tgz#06f4b89e53710cd6cea4a7781c7a956642de8dc9"
-  dependencies:
-    lodash.isequal "^3.0"
-
 deep-extend@~0.4.0:
   version "0.4.2"
   resolved "https://registry.npmjs.org/deep-extend/-/deep-extend-0.4.2.tgz#48b699c27e334bf89f10892be432f6e4c7d34a7f"
@@ -1548,13 +1538,6 @@ enzyme-adapter-utils@^1.3.0:
     object.assign "^4.0.4"
     prop-types "^15.6.0"
 
-enzyme-matchers@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.npmjs.org/enzyme-matchers/-/enzyme-matchers-6.0.0.tgz#b88a28abad42ec69dc1bac7c67152dba2e157950"
-  dependencies:
-    circular-json-es6 "^2.0.1"
-    deep-equal-ident "^1.1.1"
-
 enzyme-to-json@^1.4.4:
   version "1.6.0"
   resolved "https://registry.npmjs.org/enzyme-to-json/-/enzyme-to-json-1.6.0.tgz#9d9bba706e8b500c673b7a4fa9ff7ce57b8b9254"
@@ -1566,12 +1549,6 @@ enzyme-to-json@^1.4.4:
     lodash.range "^3.2.0"
     object-values "^1.0.0"
     object.entries "^1.0.4"
-
-enzyme-to-json@^3.3.0:
-  version "3.3.3"
-  resolved "https://registry.npmjs.org/enzyme-to-json/-/enzyme-to-json-3.3.3.tgz#ede45938fb309cd87ebd4386f60c754525515a07"
-  dependencies:
-    lodash "^4.17.4"
 
 enzyme@^3.3.0:
   version "3.3.0"
@@ -2622,12 +2599,6 @@ jest-docblock@^22.1.0, jest-docblock@^22.4.0:
   dependencies:
     detect-newline "^2.1.0"
 
-jest-environment-enzyme@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.npmjs.org/jest-environment-enzyme/-/jest-environment-enzyme-6.0.0.tgz#469ceaa0a21579af86cb01255f0591a3a5d95f40"
-  dependencies:
-    jest-environment-jsdom "^22.4.1"
-
 jest-environment-jsdom@^22.4.1:
   version "22.4.1"
   resolved "https://registry.npmjs.org/jest-environment-jsdom/-/jest-environment-jsdom-22.4.1.tgz#754f408872441740100d3917e5ec40c74de6447f"
@@ -2642,14 +2613,6 @@ jest-environment-node@^22.4.1:
   dependencies:
     jest-mock "^22.2.0"
     jest-util "^22.4.1"
-
-jest-enzyme@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.npmjs.org/jest-enzyme/-/jest-enzyme-6.0.0.tgz#518d4ecc5e32c8c1564b41b7bc83ea38667e8661"
-  dependencies:
-    enzyme-matchers "^6.0.0"
-    enzyme-to-json "^3.3.0"
-    jest-environment-enzyme "^6.0.0"
 
 jest-get-type@^22.1.0:
   version "22.1.0"
@@ -3018,14 +2981,6 @@ lodash._basecopy@^3.0.0:
   version "3.0.1"
   resolved "https://registry.npmjs.org/lodash._basecopy/-/lodash._basecopy-3.0.1.tgz#8da0e6a876cf344c0ad8a54882111dd3c5c7ca36"
 
-lodash._baseisequal@^3.0.0:
-  version "3.0.7"
-  resolved "https://registry.npmjs.org/lodash._baseisequal/-/lodash._baseisequal-3.0.7.tgz#d8025f76339d29342767dcc887ce5cb95a5b51f1"
-  dependencies:
-    lodash.isarray "^3.0.0"
-    lodash.istypedarray "^3.0.0"
-    lodash.keys "^3.0.0"
-
 lodash._basetostring@^3.0.0:
   version "3.0.1"
   resolved "https://registry.npmjs.org/lodash._basetostring/-/lodash._basetostring-3.0.1.tgz#d1861d877f824a52f669832dcaf3ee15566a07d5"
@@ -3033,10 +2988,6 @@ lodash._basetostring@^3.0.0:
 lodash._basevalues@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/lodash._basevalues/-/lodash._basevalues-3.0.0.tgz#5b775762802bde3d3297503e26300820fdf661b7"
-
-lodash._bindcallback@^3.0.0:
-  version "3.0.1"
-  resolved "https://registry.npmjs.org/lodash._bindcallback/-/lodash._bindcallback-3.0.1.tgz#e531c27644cf8b57a99e17ed95b35c748789392e"
 
 lodash._getnative@^3.0.0:
   version "3.9.1"
@@ -3084,13 +3035,6 @@ lodash.isarray@^3.0.0:
   version "3.0.4"
   resolved "https://registry.npmjs.org/lodash.isarray/-/lodash.isarray-3.0.4.tgz#79e4eb88c36a8122af86f844aa9bcd851b5fbb55"
 
-lodash.isequal@^3.0:
-  version "3.0.4"
-  resolved "https://registry.npmjs.org/lodash.isequal/-/lodash.isequal-3.0.4.tgz#1c35eb3b6ef0cd1ff51743e3ea3cf7fdffdacb64"
-  dependencies:
-    lodash._baseisequal "^3.0.0"
-    lodash._bindcallback "^3.0.0"
-
 lodash.isnil@^4.0.0:
   version "4.0.0"
   resolved "https://registry.npmjs.org/lodash.isnil/-/lodash.isnil-4.0.0.tgz#49e28cd559013458c814c5479d3c663a21bfaa6c"
@@ -3098,10 +3042,6 @@ lodash.isnil@^4.0.0:
 lodash.isplainobject@^4.0.6:
   version "4.0.6"
   resolved "https://registry.npmjs.org/lodash.isplainobject/-/lodash.isplainobject-4.0.6.tgz#7c526a52d89b45c45cc690b88163be0497f550cb"
-
-lodash.istypedarray@^3.0.0:
-  version "3.0.6"
-  resolved "https://registry.npmjs.org/lodash.istypedarray/-/lodash.istypedarray-3.0.6.tgz#c9a477498607501d8e8494d283b87c39281cef62"
 
 lodash.keys@^3.0.0:
   version "3.1.2"
