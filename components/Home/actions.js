@@ -10,8 +10,12 @@ export const fetchHelloMessage = () => {
       fetch(API_BASE_URL + HELLO_ENDPOINT)
       .then(response => response.json())
       .then(parsedResponse => {
-        var message  = parsedResponse.message;
-        dispatch({type: MESSAGE_RECEIVED, message: message});
+        dispatch(
+          {
+            type: MESSAGE_RECEIVED,
+            title: parsedResponse.title,
+            message: parsedResponse.message
+          });
       });
     };
 };
