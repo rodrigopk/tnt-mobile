@@ -16,25 +16,29 @@ class Home extends Component {
 
   render() {
     if (this.props.loading) {
-      return (
-          <View style={styles.activityIndicatorContainer}>
-              <ActivityIndicator
-                  animating={true}
-                  style={[{height: 80}]}
-                  size="small"
-              />
-          </View>
-      );
+      return this.renderActivityIndicator();
     } else {
-      return (
-        <View style={styles.messageContainer}>
-          <Text style={styles.message}>
-            { this.props.message }
-          </Text>
-        </View>
-      );
+      return this.renderMessage();
     }
   }
+
+  renderActivityIndicator = () => (
+    <View style={styles.activityIndicatorContainer}>
+      <ActivityIndicator
+        animating={true}
+        style={[{height: 80}]}
+        size="small"
+      />
+    </View>
+  );
+
+  renderMessage = () => (
+    <View style={styles.messageContainer}>
+      <Text style={styles.message}>
+        { this.props.message }
+      </Text>
+    </View>
+  );
 };
 
 const mapStateToProps = state => ({
