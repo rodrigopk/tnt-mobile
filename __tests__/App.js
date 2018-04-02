@@ -1,8 +1,8 @@
 import 'react-native';
+import 'isomorphic-fetch';
 import React from 'react';
-import App from '../App';
 
-// Note: test renderer must be required after react-native.
+import App from '../App';
 import renderer from 'react-test-renderer';
 
 it('renders correctly', () => {
