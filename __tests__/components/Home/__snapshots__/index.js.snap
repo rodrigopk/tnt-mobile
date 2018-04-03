@@ -8,6 +8,7 @@ ShallowWrapper {
     getMessage={[Function]}
     loading={false}
     message="Hello from the backend!"
+    title="Greetings"
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -22,7 +23,7 @@ ShallowWrapper {
     "nodeType": "function",
     "props": Object {
       "message": "Hello from the backend!",
-      "title": undefined,
+      "title": "Greetings",
     },
     "ref": null,
     "rendered": null,
@@ -35,7 +36,7 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "message": "Hello from the backend!",
-        "title": undefined,
+        "title": "Greetings",
       },
       "ref": null,
       "rendered": null,
@@ -70,6 +71,7 @@ ShallowWrapper {
     getMessage={[Function]}
     loading={true}
     message=""
+    title=""
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],

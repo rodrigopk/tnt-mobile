@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home reducer MESSAGE_RECEIVED action 1`] = `
+Object {
+  "loading": false,
+  "message": "Some message",
+  "title": "Some title",
+}
+`;
+
+exports[`Home reducer should return initial state 1`] = `
+Object {
+  "loading": true,
+  "message": "",
+  "title": "",
+}
+`;
